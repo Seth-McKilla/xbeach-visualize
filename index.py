@@ -4,4 +4,5 @@ import matplotlib.pyplot as plt
 
 f = netCDF4.Dataset('./xboutput.nc')
 
-print(f.variables.keys())
+sediment_x = f.variables['Susg'][:]
+print(sediment_x.shape)
